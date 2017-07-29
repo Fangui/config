@@ -1,4 +1,4 @@
-alias Makefile='if ! [ -f "Makefile" ]; then curPath=$PWD;cd; cd script; ./create_Makefile.sh; mv Makefile $echo$curPath; cd $echo$curPath; else echo Already a Makefile; fi'
+alias Makefile='if ! [ -f "Makefile" ]; then curPath=$PWD;cd; cd script; ./create_Makefile.sh; mv Makefile $echo$curPath; cd $echo$curPath; sed -i "/SRC=/c\SRC=$(echo *.c )" Makefile; else echo Already a Makefile; fi'
 
 alias AUTHORS='curPath=$PWD;cd; cd script; ./createAuthors.sh; mv AUTHORS $echo$curPath; cd $echo$curPath;'
 
