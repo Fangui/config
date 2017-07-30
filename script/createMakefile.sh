@@ -19,5 +19,5 @@ echo 'clean:' >> Makefile
 echo '  rm -f *.o' >> Makefile
 echo '  rm -f *.d' >> Makefile
 echo '  rm -f ${PRG}' >> Makefile
-echo '  rm -f *.swp' >> Makefile
+echo '  rm -f .*.swp' >> Makefile
 echo '  clear' >> Makefile

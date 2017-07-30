@@ -10,7 +10,11 @@ clear
 
 [ ! -f *.d ] && echo ".d: ${GREEN}OK${NC}" || echo ".d: ${RED}KO${NC}"
 
-[ ! -f *.swp ] && echo ".swp: ${GREEN}OK${NC}" || echo ".swp: ${RED}KO${NC}"
+[ ! -f .*.swp ] && echo ".swp: ${GREEN}OK${NC}" || echo ".swp: ${RED}KO${NC}"
+
+[ -f "TODO" ] && echo "TODO: ${GREEN}OK${NC}" || echo "TODO: ${RED}KO${NC}"
+
+[ -f "README" ] && echo "README: ${GREEN}OK${NC}" || echo "README: ${RED}KO${NC}"
 
 if [ -f "AUTHORS" ]; then
   length=$(wc -m < AUTHORS)
