@@ -2,6 +2,7 @@ alias Makefile='if ! [ -f "Makefile" ]; then /home/fang/script/createMakefile.sh
 
 alias AUTHORS='/home/fang/script/createAuthors.sh'
 alias Check='/home/fang/script/checkRendu.sh'
+alias Clean='/home/fang/script/clean.sh'
 
 alias tp='cd ~/afs/s3_Tp_C'
 alias try='cd ~/afs/test'
