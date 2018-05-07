@@ -1,0 +1,9 @@
+[user]
+	name = Clément Fang
+	email = clement.fang@epita.fr
+[pull]
+	rebase = true
+[alias]
+pr = pull --rebase
+sl = shortlog
+lga = log --oneline --decorate --all --graph
