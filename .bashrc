@@ -11,10 +11,9 @@ alias grep='grep --color=auto'
 
 alias Makefile='~/config/script/createMakefile.sh'
 
-alias AUTHORS='~/config/script/createAuthors.sh'
-alias Check='~/config/script/checkRendu.sh'
-alias Clean='~/config/script/clean.sh'
-alias connect='ssh -p 43193 fang_c@163.5.55.18'
+alias rcmake='cmake -DCMAKE_BUILD_TYPE=RELEASE'
+alias dcmake='cmake -DCMAKE_BUILD_TYPE=DEBUG'
+
 PS1='[\u@\h \W] {$?}\$ '
 
 export WORKON_HOME=$HOME/.virtualenvs
